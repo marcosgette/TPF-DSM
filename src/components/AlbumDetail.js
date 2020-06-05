@@ -7,8 +7,7 @@ import { Actions } from 'react-native-router-flux';
 
 const AlbumDetail = ({ title, albumId }) => {
   const {
-    headerContentStyle,
-    
+    headerContentStyle,    
     headerTextStyle,
     imageStyle
   } = styles;
@@ -24,7 +23,7 @@ const AlbumDetail = ({ title, albumId }) => {
 
       <CardSection>
         <Button onPress={() => Actions.photoList({albumId:albumId})}>
-          See Now!
+          Ver album
         </Button>
       </CardSection>
     </Card>
@@ -37,7 +36,9 @@ const styles = {
     justifyContent: 'space-around'
   },
   headerTextStyle: {
-    fontSize: 18
+    fontSize: 18,
+    color: '#FFF',
+    padding: 12
   },
   thumbnailStyle: {
     height: 50,

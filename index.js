@@ -16,10 +16,10 @@ const App = () => (
       <Scene
         key="albumList"
         component={AlbumList}
-        title="Albums"
-        initial={true}
+        title="ALBUMS"
+        initial={true}        
       />
-      <Scene key="photoList" component={PhotoList} title="Photos" />
+      <Scene key="photoList" component={PhotoList} title="FOTOS" />
     </Stack>
   </Router>
 );

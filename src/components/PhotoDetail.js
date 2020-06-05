@@ -37,7 +37,7 @@ const PhotoDetail = ({ title, imageUrl }) => {
 
       <CardSection>
         <Button onPress={() => Linking.openURL(imageUrl)}>
-          See Now!
+          Ver imagen
         </Button>
       </CardSection>
     </Card>
@@ -50,7 +50,8 @@ const styles = {
     justifyContent: 'space-around'
   },
   headerTextStyle: {
-    fontSize: 18
+    fontSize: 18,
+    color: '#FFF'
   },
   thumbnailStyle: {
     height: 50,
@@ -58,9 +59,8 @@ const styles = {
   },
   thumbnailContainerStyle: {
     justifyContent: 'center',
-    alignItems: 'center',
-    marginLeft: 10,
-    marginRight: 10
+    alignItems: 'center',    
+    marginRight: 15
   },
   imageStyle: {
     height: 300,
